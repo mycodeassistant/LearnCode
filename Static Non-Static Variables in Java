@@ -1,0 +1,15 @@
+public class Calculator {
+int num1;
+int num2;
+String name;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Calculator cr=new Calculator();
+cr.num1=10;
+cr.num2=20;
+cr.name="Kummar";
+String sum=cr.num1+cr.name+cr.num2;
+System.out.println(sum);
+	}
+
+}
