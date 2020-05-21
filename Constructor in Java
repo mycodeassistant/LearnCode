@@ -1,0 +1,55 @@
+package constructorChaining;
+
+public class Baby 
+{
+	String name;
+	int age;
+	
+	//a no - arg const
+	public Baby() 
+	{
+		this(0);
+		System.out.println("no - arg const chala-->>>>");
+	}
+	
+	//a arg - const for int
+	public Baby(int age)
+	{
+		this(age,"Not-Specified");
+		this.age = age;
+		System.out.println("arg const chala-->>>> for int only");
+	}
+	
+	//a arg - const for int and String
+	public Baby(int age, String name)
+	{
+		this.age = age;
+		this.name = name;
+		System.out.println("arg const chala-->>>> for int and String value");
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		Baby b1 = new Baby();
+		Baby b2 = new Baby(8);
+		Baby b3 = new Baby(5, "Akash");
+		
+		//print b1 
+		System.out.println(b1.age);
+		System.out.println(b1.name);
+		System.out.println("--------------------------");
+		
+		System.out.println(b2.age);
+		System.out.println(b2.name);
+		System.out.println("--------------------------");
+
+		System.out.println(b3.age);
+		System.out.println(b3.name);
+		System.out.println("--------------------------");
+//		
+		
+		
+		
+	}
+}
