@@ -41,6 +41,7 @@ Person p2=new Person("Yogi","Agra fort","b.tech",13);
 
 
 p1.ShowPersonDetails();
+p2.ShowPersonDetails();
 	}
 
 }
