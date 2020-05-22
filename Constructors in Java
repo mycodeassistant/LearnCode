@@ -1,0 +1,46 @@
+package Constructor;
+
+public class Person
+{
+	static String clg;
+String Name,City,Qualification;
+float fees;
+//constructor 
+public Person(String Name,String City,String Qualification,float fees)
+{
+	this.Name=Name;
+	this.City=City;
+	this.Qualification=Qualification;
+	this.fees=fees;
+	
+	System.out.println(Name);
+	System.out.println(City);
+	System.out.println(Qualification);
+	System.out.println(fees);
+	System.out.println("-----------------------------------------------------------------");
+}
+void ShowPersonDetails()
+{
+	System.out.println(Name);
+	System.out.println(City);
+	System.out.println(Qualification);
+	System.out.println(fees);
+	System.out.println("-----------------------------------------------------------------");
+
+}
+public Person()
+{
+	System.out.println("no-arg const");
+}
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		
+Person p1=new Person("Yogesh","Agra","Qualification",12);
+Person p2=new Person("Yogi","Agra fort","b.tech",13);
+
+
+p1.ShowPersonDetails();
+	}
+
+}
